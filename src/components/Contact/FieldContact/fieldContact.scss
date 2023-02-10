@@ -1,0 +1,17 @@
+@use 'src/styles/vars';
+
+.contact-form{
+  width: 20rem;
+  .contact-form-element{
+    height:auto ;
+  }
+  .messageContact input{
+    height: 10rem;
+  }
+  button{
+    width: 98.5%;
+    height: 2rem;
+  }
+}
+
+

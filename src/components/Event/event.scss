@@ -1,0 +1,73 @@
+@use 'src/styles/vars';
+
+// ===========================
+//     media width <799px
+// ===========================
+@media (max-width:799px) {
+  .event {
+    margin-top: 4rem;
+    width: 350px;
+
+    .event-title{
+      margin: 1rem 0;
+      font-size: 1.75rem;
+    }
+    .event-list {
+      margin: 1rem 0;
+      display: flex;
+      text-align: start;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// =======================================
+//     media width 800px> width <1200
+// =======================================
+@media (min-width:800px) and (max-width:1199px)  {
+  .event {
+    margin-top: 4rem;
+    width: 740px;
+
+    .event-title{
+      margin: 1rem 0;
+      font-size: 2rem;
+    }
+    .event-list {
+      margin: 1rem 0;
+      display: flex;
+      text-align: start;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// ===========================
+//     media width 1200px
+// ===========================
+@media (min-width:1200px) {
+  .event {
+    margin: 5rem 0;
+    width: 740px;
+
+    .event-title{
+      margin: 2rem 0;
+      font-size: 3rem;
+    }
+    .event-list {
+      width: 640px;
+      display: flex;
+      text-align: start;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

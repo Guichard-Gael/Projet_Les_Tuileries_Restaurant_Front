@@ -1,0 +1,103 @@
+@use 'src/styles/vars';
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+.errmsg {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.succesMsg{
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #32cd32;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.connexion{
+  margin: 5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.2rem;
+  
+  .connexion-title{
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .login, 
+  .singin {
+    display: none;
+  }
+
+  .login--open,
+  .singin--open {
+    display: block;
+  } 
+}
+
+.login-form,
+.singin-form {
+  
+  &-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-message {
+    margin: .3em 1em;
+  }
+
+  &-logged {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &-button {
+    background-color: vars.$colorBrown;
+    padding: 0.5rem 3.6rem;
+    margin: 1rem ;
+    font-size: 1rem;
+    font-weight: 800;
+    color: vars.$colorBody;
+    border: none;
+    border-radius: 0.3em;
+    &:hover {
+      background-color: #ECF0F1;
+      color: vars.$colorBrown;
+    }
+  }
+}
+
+.button-switch {
+  background-color: vars.$colorWhite;
+  color: vars.$colorBrown;
+  padding: 0.5rem 3.6rem;
+  margin: 1rem ;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 0.3em;
+  &:hover {
+    color: vars.$colorBody;
+    background-color: vars.$colorBrown;
+  }
+
+}
+

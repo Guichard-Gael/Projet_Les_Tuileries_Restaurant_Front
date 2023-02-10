@@ -1,0 +1,40 @@
+@use 'src/styles/vars';
+
+// ===========================
+//     media width <800px
+// ===========================
+@media (max-width:799px) {
+  .buy-section{
+    margin-top: 5rem;
+    .buy-section-title{
+      margin: 0 1rem 1rem 1rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+// =======================================
+//     media width 800px> width <1200
+// =======================================
+@media (min-width:800px) and (max-width:1199px) {
+  .buy-section{
+    margin-top: 5rem;
+    .buy-section-title{
+      margin: 0 1rem 1rem 1rem;
+      font-size: 2rem;
+    }
+  }
+}
+// ===========================
+//     media width >1200px
+// ===========================
+
+@media (min-width:1200px) {
+  .buy-section{
+    margin-top: 1rem;
+    .buy-section-title{
+      margin: 0 1rem 1rem 1rem;
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@use 'src/styles/vars';
+
+// ===========================
+//     media width <800px
+// ===========================
+@media (max-width:799px) {
+  .surprise{
+    margin: 5rem 0 1.5rem 0;
+    .button {
+    display: flex;
+    justify-content: center;
+
+      .surprise-button{
+        background-color: vars.$colorBrown;
+        padding: 1rem 5rem;
+        margin: 1rem ;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: vars.$colorBody;
+        border: none;
+  
+        &:hover {
+          background-color: #ECF0F1;
+          color: vars.$colorBrown;
+        }
+      } 
+    }
+  }
+}
+
+// =======================================
+//     media width 800px> width <1200
+// =======================================
+@media (min-width:800px) and (max-width:1199px) {
+  .surprise{
+    margin: 5rem 0 1.5rem 0;
+    .button {
+    display: flex;
+    justify-content: center;
+  
+      .surprise-button{
+        background-color: vars.$colorBrown;
+        padding: 1rem 5rem;
+        margin: 1rem ;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: vars.$colorBody;
+        border: none;
+  
+        &:hover {
+          background-color: #ECF0F1;
+          color: vars.$colorBrown;
+        }
+      } 
+    }
+  }
+}
+
+// ===========================
+//     media width >1200px
+// ===========================
+
+@media (min-width:1200px) {
+  .surprise{
+    width: calc((100%/3)*2);
+    
+    .button {
+    display: flex;
+    justify-content: center;
+
+      .surprise-button{
+        background-color: vars.$colorBrown;
+        padding: 1rem 5rem;
+        margin: 2.5rem 0 3rem 0 ;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: vars.$colorBody;
+        border: none;
+
+        &:hover {
+          background-color: #ECF0F1;
+          color: vars.$colorBrown;
+        }
+      } 
+    }
+  }
+}
+

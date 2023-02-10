@@ -1,0 +1,44 @@
+@use 'src/styles/vars';
+
+.popup{
+  display: none;
+}
+
+.popup--open{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  
+  .popup-overlay{
+    position: fixed;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: vars.$colorBody;
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  .popup-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .popup-content{
+      margin: 0.5rem;
+    }
+
+    .popup-button{
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+    }
+  }
+}

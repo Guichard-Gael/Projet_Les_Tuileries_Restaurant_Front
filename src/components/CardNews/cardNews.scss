@@ -1,0 +1,122 @@
+@use 'src/styles/vars';
+
+
+// ===========================
+//     media width <800px
+// ===========================
+@media (max-width:799px) {
+  .card-news {
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .card-news-content {
+      width: 100%;
+      padding: 0.5rem;
+      
+      .card-news-title {
+        font-size: 1.5rem;
+      }
+
+      .card-news-desc {
+        font-size: 1rem;
+        text-align: justify;
+        padding: 1rem 0;
+      }
+
+      .card-news-date{
+        color: vars.$colorBrown;
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+// =======================================
+//     media width 800px> width <1200
+// =======================================
+@media (min-width:800px) and (max-width:1199px)  {
+
+  .card-news {
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+    .card-news-content {
+      width: 100%;
+      padding: 0.5rem;
+      
+      .card-news-title {
+        font-size: 1.5rem;
+      }
+  
+      .card-news-desc {
+        font-size: 1.3rem;
+        text-align: justify;
+        padding: 1rem 0;
+      }
+      .card-news-date{
+        color: vars.$colorBrown;
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+// ===========================
+//     media width >1200px
+// ===========================
+@media (min-width:1200px) {
+  .card-news {
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .card-news-content {
+      width: 100%;
+      padding: 0.5rem;
+      
+      .card-news-title {
+        font-size: 2.5rem;
+      }
+
+      .card-news-desc {
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 1.5rem 0;
+      }
+
+      .card-news-date{
+        color: vars.$colorBrown;
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+  }
+}

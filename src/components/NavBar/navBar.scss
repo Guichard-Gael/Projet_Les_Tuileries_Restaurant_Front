@@ -1,0 +1,181 @@
+@use 'src/styles/vars';
+
+// ===========================
+//     media width <800px
+// ===========================
+@media (max-width:799px) {
+  .nav {
+    z-index: 10;
+    background-color: vars.$colorBody;
+    padding: 2.2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    // margin-bottom: 2rem;
+    height: 50px;
+    width: 100%;
+    // position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav-logo {
+      width: 15rem;
+      height: auto;
+    }
+    .nav-burger {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top:0;
+      right: 0;
+      font-size: 2rem;
+      padding: 0.5rem;
+      background-color: transparent;
+      color: vars.$colorBrown;
+      border: none;
+    }
+    /*contenu du nav */
+		.nav-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      z-index: 2;
+      top: 70px;
+      left: 0;
+      align-items: center;
+      background-color: vars.$colorBody;
+		}
+    .nav-link {
+      font-size: vars.$fsMenu;
+      color: vars.$colorWhite;
+      padding: 13px 10px 13px 10px;
+  
+      &--selected {
+        text-decoration: underline vars.$colorWhite;
+        color: vars.$colorWhite;
+      }
+  
+      &:hover {
+        background-color: vars.$colorBrown;
+      }
+    }
+  }
+}
+
+
+// =======================================
+//     media width 800px> width <1200
+// =======================================
+@media (min-width:800px) and (max-width:1199px) {
+  .nav {
+    z-index: 10;
+    background-color: vars.$colorBody;
+    padding: 2.2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 100%;
+    // position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav-logo {
+      width: 20rem;
+      height: auto;
+    }
+    .nav-burger {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top:0;
+      right: 0;
+      font-size: 2.75rem;
+      padding: 0.5rem;
+      background-color: transparent;
+      color: vars.$colorBrown;
+      border: none;
+    }
+    /*contenu du nav */
+		.nav-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      z-index: 2;
+      top: 70px;
+      left: 0;
+      align-items: center;
+      background-color: vars.$colorBody;
+		}
+    .nav-link {
+      font-size: 1.75rem;
+      color: vars.$colorWhite;
+      padding: 13px 10px 13px 10px;
+  
+      &--selected {
+        text-decoration: underline vars.$colorWhite;
+        color: vars.$colorWhite;
+      }
+  
+      &:hover {
+        background-color: vars.$colorBrown;
+      }
+    }
+  }
+}
+
+// ===========================
+//     media width >1200px
+// ===========================
+@media (min-width:1200px) {
+  .nav {
+    z-index: 10;
+    background-color: vars.$colorBody;
+    padding: 2.2rem;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    height: 72px;
+    width: 100%;
+    // position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav-logo {
+        width: 21rem;
+        height: auto;
+      }
+    .nav-burger{
+        display: none;
+    }
+    .nav-link {
+      font-size: vars.$fsMenu;
+      cursor: pointer;
+      color: vars.$colorWhite;
+      padding: 13px 10px 13px 10px;
+  
+      &--selected {
+        text-decoration: underline vars.$colorWhite;
+        color: vars.$colorWhite;
+      }
+  
+      &:hover {
+        background-color: vars.$colorBrown;
+      }
+    }
+  }
+}

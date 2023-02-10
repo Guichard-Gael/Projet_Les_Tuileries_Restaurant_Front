@@ -1,0 +1,17 @@
+.unauthorized {
+  margin: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  .unauthorized-title{
+    font-size: 4rem;
+  }
+  .unauthorized-content{
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .unauthorized-button{
+    padding: 0.5rem 1.5rem;
+  }
+}

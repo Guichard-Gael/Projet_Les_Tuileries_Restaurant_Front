@@ -1,0 +1,21 @@
+@use 'reset';
+@use 'vars';
+
+body {
+  font-family: vars.$font;
+  background-color: vars.$colorBody;
+  color: vars.$colorWhite;
+  font-size: vars.$fsParagraphe;
+  font-weight: vars.$fwNormal;
+}
+
+h1 {
+  font-size: vars.$fsTitle;
+  font-weight: vars.$fwBold;
+  color: vars.$colorBrown;
+}
+
+p {
+  font-size: vars.$fsParagraphe;
+  font-weight: vars.$fwNormal;
+}

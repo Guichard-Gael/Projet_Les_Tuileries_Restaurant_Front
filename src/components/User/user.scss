@@ -1,0 +1,442 @@
+@use 'src/styles/vars';
+
+// ===========================
+//     media width <800px
+// ===========================
+@media (max-width:799px) {
+  .user{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+  
+    // right container
+    .user-info-container{
+      span {
+        color: vars.$colorWhite;
+      }
+      .user-info-content{
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: vars.$colorBrown;
+        padding: 0.10rem;;
+      }
+      .user-button{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+    }
+    
+    // left container
+    .left {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+
+    .user-card{
+      display: flex;
+      justify-content: center;
+      padding: 0 0.25rem;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      
+    }
+    .card-buy{
+      font-weight: 700;
+      cursor: grab;
+      background-color: vars.$colorBrown;
+      border: none;
+      padding: 1rem;
+
+      &:hover {
+        background-color: vars.$colorWhite;
+      }
+    }
+  
+    .user-card-history{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card-history-container{
+      width: 100%;
+    }
+
+    .card-history{
+      //border: solid 1px red;
+      margin: 0.2rem;
+      display: flex;
+      font-size: 1rem;
+      padding: 0.5rem;
+      ul{
+        width: 100%;
+        border: solid 1px white;
+        border-radius: 10px;
+        padding: 0 0.25rem;
+      }
+    }
+
+    .card-history-info-active{
+      background-color: #32cd32;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      font-weight: 700;
+    }
+    .card-history-info-disable{
+      background-color: #C0392B;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      font-weight: 700;
+    }
+
+    .card-history-info{
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: vars.$colorBrown;
+      padding: 0.10rem;
+      span {
+        color: vars.$colorWhite;
+      }
+    }
+  
+  
+    button{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      cursor: alias;
+    }
+  
+    .user-edit{
+      border: none;
+      font-weight: 600;
+      cursor: grab;
+      &:hover {
+        background-color: #EDBB99;
+      }
+    }
+  
+    .user-delete{
+      background-color: #C0392B;
+      border: none;
+      font-weight: 600;
+      cursor: grab;
+      &:hover {
+        background-color: #B03A2E;
+        color: vars.$colorWhite;
+      }
+    }
+  }
+}
+
+// =======================================
+//     media width 800px> width <1200
+// =======================================
+@media (min-width:800px) and (max-width:1199px) {
+  .user{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+  
+    // right container
+    .user-info-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: nowrap;
+      span {
+        color: vars.$colorWhite;
+      }
+      .user-info-content{
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: vars.$colorBrown;
+        padding: 0.10rem;;
+      }
+      .user-button{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+    }
+    
+    // left container
+    .left {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      margin-right: 2.5rem;
+    }
+
+    .user-card{
+      padding: 0 0.25rem;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      
+    }
+    .card-buy{
+      font-weight: 700;
+      cursor: grab;
+      background-color: vars.$colorBrown;
+      border: none;
+      padding: 1rem;
+
+      &:hover {
+        background-color: vars.$colorWhite;
+      }
+    }
+  
+    .user-card-history{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: flex-start;
+    }
+
+    .card-history-container{
+      width: 100%;
+    }
+
+    .card-history{
+      margin: 0.2rem;
+      display: flex;
+      font-size: 1rem;
+      padding: 0.5rem;
+      ul{
+        width: 100%;
+        border: solid 1px white;
+        border-radius: 10px;
+        padding: 0 0.25rem;
+      }
+    }
+
+    .card-history-info-active{
+      background-color: #32cd32;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      font-weight: 700;
+    }
+    .card-history-info-disable{
+      background-color: #C0392B;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      font-weight: 700;
+    }
+
+    .card-history-info{
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: vars.$colorBrown;
+      padding: 0.10rem;
+      span {
+        color: vars.$colorWhite;
+      }
+    }
+
+    button{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      cursor: alias;
+    }
+
+    .user-edit{
+      border: none;
+      font-weight: 600;
+      cursor: grab;
+      &:hover {
+        background-color: #EDBB99;
+      }
+    }
+
+    .user-delete{
+      background-color: #C0392B;
+      border: none;
+      font-weight: 600;
+      cursor: grab;
+      &:hover {
+        background-color: #B03A2E;
+        color: vars.$colorWhite;
+      }
+    }
+  }
+}
+
+// ===========================
+//     media width >1200px
+// ===========================
+
+@media (min-width:1200px) {
+  .user{
+    width: calc((100%/3)*2);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    justify-content: space-around;
+
+    // right container
+    .user-info-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: nowrap;
+      span {
+        color: vars.$colorWhite;
+      }
+      .user-info-content{
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: vars.$colorBrown;
+        padding: 0.10rem;;
+      }
+      .user-button{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+    }
+    
+    // left container
+    .left {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      margin-right: 2.5rem;
+    }
+
+    .user-card{
+      // border: solid 1px white;
+      // border-radius: 10px;
+      padding: 0 0.25rem;
+      // display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      
+    }
+    .card-buy{
+      // font-size: 2rem;
+      // font-weight: 900;
+      // width: 4rem;
+      // height: 4rem;
+      // margin: 1rem;
+      // font-size: 1rem;
+      font-weight: 700;
+      cursor: grab;
+      background-color: vars.$colorBrown;
+      border: none;
+      padding: 1rem;
+
+      &:hover {
+        background-color: vars.$colorWhite;
+      }
+    }
+
+    .user-card-history{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: flex-start;
+    }
+
+    .card-history-container{
+      width: 100%;
+    }
+
+    .card-history{
+      //border: solid 1px red;
+      margin: 0.2rem;
+      display: flex;
+      font-size: 1rem;
+      padding: 0.5rem;
+      ul{
+        width: 100%;
+        border: solid 1px white;
+        border-radius: 10px;
+        padding: 0 0.25rem;
+        width: 16.5rem;
+      }
+    }
+
+    .card-history-info-active{
+      background-color: #32cd32;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      font-weight: 700;
+    }
+    .card-history-info-disable{
+      background-color: #C0392B;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      font-weight: 700;
+    }
+
+    .card-history-info{
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: vars.$colorBrown;
+      padding: 0.10rem;
+      span {
+        color: vars.$colorWhite;
+      }
+    }
+
+    button{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      cursor: alias;
+    }
+  
+    .user-edit{
+      border: none;
+      font-weight: 600;
+      cursor: grab;
+      &:hover {
+        background-color: #EDBB99;
+      }
+    }
+  
+    .user-delete{
+      background-color: #C0392B;
+      border: none;
+      font-weight: 600;
+      cursor: grab;
+      &:hover {
+        background-color: #B03A2E;
+        color: vars.$colorWhite;
+      }
+    }
+  }
+}

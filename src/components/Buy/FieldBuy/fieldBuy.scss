@@ -1,0 +1,38 @@
+@use 'src/styles/vars';
+
+// ===========================
+// 
+// ===========================
+
+.buying-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .buying-form-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  &-element {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+
+  &-button {
+    background-color: vars.$colorBrown;
+    padding: 0.5rem 3.6rem;
+    margin: 1rem ;
+    font-size: 1rem;
+    font-weight: 800;
+    color: vars.$colorBody;
+    border: none;
+    border-radius: 0.3em;
+    &:hover {
+      background-color: #ECF0F1;
+      color: vars.$colorBrown;
+    }
+  }
+}
+
+
